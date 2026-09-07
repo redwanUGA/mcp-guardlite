@@ -1,0 +1,4 @@
+families: [T1, T2, T3, T4, P1, P2, P3, P4, P5, R1, R2, R3]
+rate: 0.15
+seed: 0
+max_faults_per_episode: 3

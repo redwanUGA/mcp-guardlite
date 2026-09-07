@@ -1,0 +1,9 @@
+# RQ1: does compression cost recovery more than accuracy?
+name: rq1_compression_grid
+models: [qwen2.5-1.5b-instruct, llama-3.2-1b-instruct, qwen2.5-3b-instruct]
+compression: [fp16, q5km, q4km, q3km]
+fault_configs: [clean, mixed_r15]
+profile: E2
+method: naive          # RQ1 measures the MODEL, so no recovery machinery
+seeds: [0,1,2,3,4]
+n_tasks: 200

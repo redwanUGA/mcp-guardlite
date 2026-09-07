@@ -1,0 +1,7 @@
+# R2 rate-tuning arm: r15 without P3 schema drift -- P3 is persistent and
+# dominated the W1 fired episodes (6/14); this isolates its contribution.
+families: [T2, T3, P1, P5, S1, S2, S3, R1]
+rate: 0.15
+persistence_override: null
+seed: 0
+max_faults_per_episode: 3

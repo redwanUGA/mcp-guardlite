@@ -1,0 +1,9 @@
+# RQ4: does the runtime close the gap?
+name: rq4_methods
+models: [qwen2.5-1.5b-instruct]
+compression: [q4km]
+fault_configs: [mixed_r15]
+profile: E2
+methods: [naive, retry_only, reflect, full_replan, guardlite, guardlite_facalib, oracle]
+seeds: [0,1,2,3,4]
+n_tasks: 200

@@ -1,0 +1,6 @@
+# Primary fault process used for all headline tables.
+families: [T2, T3, P1, P3, P5, S1, S2, S3, R1]
+rate: 0.15
+persistence_override: null
+seed: 0
+max_faults_per_episode: 3

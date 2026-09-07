@@ -1,0 +1,5 @@
+# The RQ3 stress condition. Expect the largest RCG here if H3 holds.
+families: [S1, S2, S3, S4]
+rate: 0.20
+seed: 0
+max_faults_per_episode: 2

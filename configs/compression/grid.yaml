@@ -1,0 +1,13 @@
+quantization:
+  - {id: fp16,   method: none}
+  - {id: int8,   method: w8a8}
+  - {id: awq4,   method: awq,  bits: 4, calib: generic}
+  - {id: gptq4,  method: gptq, bits: 4, calib: generic}
+  - {id: q5km,   method: gguf, quant: Q5_K_M}
+  - {id: q4km,   method: gguf, quant: Q4_K_M}     # deployment operating point
+  - {id: q3km,   method: gguf, quant: Q3_K_M}
+pruning:
+  - {id: p10, ratio: 0.10, heal: true}
+  - {id: p25, ratio: 0.25, heal: true}
+  - {id: p40, ratio: 0.40, heal: true}
+calibration_arms: [generic, nominal, recovery, mixture]   # RQ5, fixed at 4-bit

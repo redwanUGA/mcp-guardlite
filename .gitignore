@@ -1,0 +1,28 @@
+# --- NEVER PUBLISH: credentials & site-specific infrastructure -------------
+gacrc/
+**/pw.txt
+*.pem
+*.key
+
+# --- internal working material (not part of the public artifact) -----------
+HANDOFF.md
+PAPER_HANDOFF.md
+paper/
+results/
+data/raw/
+data/processed/
+models/
+logs/
+
+# --- build & caches ---------------------------------------------------------
+__pycache__/
+*.egg-info/
+.venv/
+.pytest_cache/
+*.pyc
+paper/*.aux
+paper/*.bbl
+paper/*.blg
+paper/*.log
+paper/*.out
+paper/main.pdf
