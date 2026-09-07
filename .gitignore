@@ -6,7 +6,7 @@ gacrc/
 
 # --- internal working material (not part of the public artifact) -----------
 HANDOFF.md
-PAPER_HANDOFF.md
+PAPER_HANDOFF*.md
 paper/
 results/
 data/raw/
